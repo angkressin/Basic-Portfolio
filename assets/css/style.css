@@ -71,10 +71,6 @@ nav a, nav a:after, nav a:before {
   transition: all .5s;
 }
 
-nav a:hover {
-  color: #555;
-}
-
 nav.stroke ul li a {
   position: relative;
 }
@@ -176,16 +172,6 @@ aside {
   filter: alpha(opacity=50);
 }
 
-img.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 .center {
   align-items: center;
 }
@@ -277,7 +263,7 @@ textarea:focus {
   float: left;
   text-align: center;
   display: block;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .portfolio-icon2 {
@@ -285,7 +271,7 @@ textarea:focus {
   text-align: center;
   padding-left: 25px;
   display: block;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .portfolio-label {
@@ -298,7 +284,8 @@ textarea:focus {
   font-size: 18px;
 }
 
-img:hover {
+.portfolio-icon1:hover,
+.portfolio-icon2:hover  {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
