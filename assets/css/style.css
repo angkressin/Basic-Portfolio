@@ -4,8 +4,15 @@ body {
   background-image: url("../images/subtlenet2.png");
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
-  position: relative;
+  height: 100%;
   line-height: 2;
+}
+
+.wrapper {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  min-height: calc(100vh - 50px);
 }
 
 header {
@@ -55,15 +62,12 @@ h1.header a:visited {
 
 nav a {
   position: relative;
-	display: inline-block;
-  outline: none;
+  display: inline-block;  outline: none;
   text-decoration: none;
   color: #777777;
 }
 
-nav a,
-nav a:after,
-nav a:before {
+nav a, nav a:after, nav a:before {
   transition: all .5s;
 }
 
@@ -74,6 +78,7 @@ nav a:hover {
 nav.stroke ul li a {
   position: relative;
 }
+
 nav.stroke ul li a:after {
   position: absolute;
   bottom: 0;
@@ -86,6 +91,7 @@ nav.stroke ul li a:after {
   background: #4aaaa5;
   height: 2px;
 }
+
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
@@ -120,7 +126,6 @@ h2 {
   padding: 0 0 10px 0;
 }
 
-
 .container {
   max-width: 960px;
   margin: auto;
@@ -135,6 +140,7 @@ h2 {
 .content {
   padding: 20px 0 0 0;
   border-top: #dddddd 1px solid;
+  clear: both;
 }
 
 section {
@@ -143,13 +149,13 @@ section {
   background-color: white;
   border: #dddddd 0.5px solid;
   padding: 16.72px 30px 30px 30px;
-  margin-bottom: 85px;
+  margin-bottom: 50px;
 }
 
 .clearfix::after {
-  display:block;
-  clear:both;
-  content:'';
+  display: block;
+  clear: both;
+  content: '';
 }
 
 aside {
@@ -166,8 +172,8 @@ aside {
 }
 
 .icons:hover {
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 img.text {
@@ -185,12 +191,15 @@ img.text {
 }
 
 footer {
+  /*position: absolute;
+  bottom: 0;
+  position: calc(100% - 30px);*/
+  width: 100%;
   text-align: center;
   background-color: #666666;
   border-top: #4aaaa5 5px solid;
   font-size: 0.8em;
-  height: 50px;
-  clear: both;
+  padding: 10px;
 }
 
 .teal {
@@ -201,20 +210,21 @@ footer {
   color: white;
 }
 
+/* form label */
 label {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
 }
 
 input[type=text], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #dddddd;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-size: 1em;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 1em;
 }
 
 input::placeholder {
@@ -223,41 +233,72 @@ input::placeholder {
 }
 
 input[type=submit] {
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    font-size: 1em;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 1em;
 }
 
 input[type=submit]:hover {
-    background-color: #666666;
+  background-color: #666666;
 }
 
 input:focus {
-    outline: none;
-    border:1px solid #dddddd;
-    box-shadow: 0 0 10px #4aaaa5;
+  outline: none;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 10px #4aaaa5;
 }
 
 textarea:focus {
-    outline: none;
-    border:1px solid #dddddd;
-    box-shadow: 0 0 10px #4aaaa5;
+  outline: none;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 10px #4aaaa5;
+}
+
+.portfolio-content {
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.portfolio-content a:link {
+  text-decoration: none;
+}
+
+.portfolio-content a:visited {
+  text-decoration: none;
 }
 
 .portfolio-icon1 {
+  padding-right: 25px;
   float: left;
-  margin: 0 27px;
   text-align: center;
-  position: relative;
+  display: block;
+  opacity: 0.9;
 }
 
-.portfolio-icon1 {
-  float: right;
-  margin: 0 27px;
+.portfolio-icon2 {
+  float: left;
   text-align: center;
+  padding-left: 25px;
+  display: block;
+  opacity: 0.9;
+}
+
+.portfolio-label {
   position: relative;
+  top: -60px;
+  background-color: #4AAAA5;
+  padding: 0;
+  color: #FFF;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
