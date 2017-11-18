@@ -133,6 +133,30 @@ h2 {
   font-weight: bold;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
+/*styled bullets for body texts*/
+
+ul.bio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.bio {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+li.bio::before {
+  content: "• ";
+  color: #4aaaa5;
+  width: 1em;
+  margin-right: 3px;
+}
+
 /*h1 space in the section*/
 
 .header-space {
@@ -178,7 +202,7 @@ aside {
   max-width: 270px;
   background-color: white;
   border: #dddddd 0.5px solid;
-  padding: 16.72px 30px 30px 30px;
+  padding: 16.72px 30px 23px 30px;
 }
 
 /*github, LinkedIn and Stack Overflow icons*/
