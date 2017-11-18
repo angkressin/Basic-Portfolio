@@ -2,17 +2,19 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../images/subtlenet2.png");
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: #777777;
   height: 100%;
   line-height: 1.5;
 }
 
+/*wrapper to contain the whole page*/
+
 .wrapper {
   position: relative;
   margin: auto;
   width: 100%;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 40px);
 }
 
 header {
@@ -23,9 +25,11 @@ header {
   width: 100%;
 }
 
+/*box that contains the logo*/
+
 .header-box {
   background-color: #4aaaa5;
-  width: 250px;
+  width: 220px;
   height: 73px;
   margin: 0;
   padding: 10px;
@@ -33,6 +37,8 @@ header {
   text-align: center;
   float: left;
 }
+
+/*implemented so that the logo has no a link decorations*/
 
 h1.header a:link {
   text-decoration: none;
@@ -47,22 +53,29 @@ h1.header a:visited {
 .nav {
   display: inline;
   background-color: #ffffff;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  ;
   font-size: 18px;
 }
+
+/*position of the nav links*/
 
 .header-nav {
   width: 400px;
   padding: 25px 0 25px 50px;
+  margin-top: 8px;
   float: right;
   position: relative;
   right: 0;
   text-align: right;
 }
 
+/*stroke effects*/
+
 nav a {
   position: relative;
-  display: inline-block;  outline: none;
+  display: inline-block;
+  outline: none;
   text-decoration: none;
   color: #777777;
 }
@@ -92,6 +105,8 @@ nav.stroke ul li a:hover:after {
   width: 100%;
 }
 
+/*lines between the navigation links*/
+
 li.bar-1 {
   padding: 0 20px 0;
 }
@@ -107,16 +122,18 @@ li.bar-3 {
 }
 
 h1 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
 
 h2 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
   font-weight: bold;
 }
+
+/*h1 space in the section*/
 
 .header-space {
   padding: 0 0 10px 0;
@@ -132,6 +149,8 @@ h2 {
   max-width: 200px;
   float: left;
 }
+
+/*text content*/
 
 .content {
   padding: 20px 0 0 0;
@@ -161,6 +180,8 @@ aside {
   border: #dddddd 0.5px solid;
   padding: 16.72px 30px 30px 30px;
 }
+
+/*github, LinkedIn and Stack Overflow icons*/
 
 .icons {
   max-height: 50px;
@@ -196,7 +217,8 @@ footer {
   color: white;
 }
 
-/* form label */
+/*form stylings*/
+
 label {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
@@ -244,6 +266,8 @@ textarea:focus {
   box-shadow: 0 0 10px #4aaaa5;
 }
 
+/*portfolio page stylings*/
+
 .portfolio-content {
   align-items: center;
   width: 100%;
@@ -280,12 +304,11 @@ textarea:focus {
   background-color: #4AAAA5;
   padding: 0;
   color: #FFF;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 18px;
 }
 
-.portfolio-icon1:hover,
-.portfolio-icon2:hover  {
+.portfolio-icon1:hover, .portfolio-icon2:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
