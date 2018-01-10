@@ -1,4 +1,4 @@
 # Basic-Portfolio
-Personal portfolio
+Basic portfolio excercise
 
 Live link: https://angkressin.github.io/Basic-Portfolio/
